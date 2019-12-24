@@ -4,6 +4,11 @@ html {
 }
 body {
 	box-sizing: border-box;
+	
+}
+section {
+	display: grid;
+	grid-template-columns: 30% 60%;	
 }
 header {
 	margin: 1rem;
