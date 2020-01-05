@@ -10,12 +10,16 @@ header {
 		margin-bottom: 3rem;
 	}
 }
-// .side-bar {
-
-// }
+section#main-info {
+	// @include grid($rowz, $colz, $gap) ;
+	display: grid;
+	grid-template-columns: 30% 60%;	
+}
 main {
 	grid-column-start: 2;
+
 }
+
 #skills {
 
 	ul {
@@ -25,7 +29,7 @@ main {
 		margin-bottom: 2rem;
 	}
 }
-#job-history-1 {
+.job-history {
 	h3 {
 		margin-bottom: 0;
 	}
