@@ -7,22 +7,35 @@ header {
 	h1 {
 		text-align: center;
 		margin-bottom: 0;
+		font-size: $f-size * 1.7;
 	}
 	p{
+		font-size: $f-size * 1.13;
 		text-align: center;
 		margin-top: 0;
 		margin-bottom: 3rem;
 	}
 }
 section#main-info {
-	// @include grid($rowz, $colz, $gap) ;
-	display: grid;
+	@include grid($rowz, $colz, $gap);
 	grid-template-columns: 30% 60%;	
 	grid-column-start: 2;
-	padding: 20px;
+	width: auto;
+	margin: 1rem;
 }
-aside {
-
+aside.side-panel {
+	border: 2px solid;
+	padding: 10px;
+	margin: 1rem;
+	h2 {
+		text-align: center;
+	}
+	// ul {
+			// STOPPED WORKING HERE
+	// }
+}
+main {
+	padding: .5em;
 }
 #skills {
 
