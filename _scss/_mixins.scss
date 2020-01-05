@@ -12,3 +12,6 @@
 		@media only screen and (min-width: $L) { @content; }
 	}
 }
+@mixin font-size($f-size:1rem){
+	font-size: $f-size;
+}

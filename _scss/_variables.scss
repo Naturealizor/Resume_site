@@ -1,5 +1,5 @@
 // Default font stack values
-$body_font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body_font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $caption_font: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 $header_font: 'SansationRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $tagline_font: 'SansationItalic', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,5 +20,9 @@ $colz: 2;
 $gap: 2px;
 $columnz: repeat(20% 70%);
 
-// Hover color shift
-$black: rgb(10,0,0);
+// Color variables
+$background: white;
+
+
+// Spacing variables
+$f-size: 1rem;

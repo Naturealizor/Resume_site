@@ -1,3 +1,7 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+
 header {
 	margin: .3rem;
 	h1 {
@@ -14,12 +18,12 @@ section#main-info {
 	// @include grid($rowz, $colz, $gap) ;
 	display: grid;
 	grid-template-columns: 30% 60%;	
-}
-main {
 	grid-column-start: 2;
+	padding: 20px;
+}
+aside {
 
 }
-
 #skills {
 
 	ul {
