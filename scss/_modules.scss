@@ -1,15 +1,66 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+
 header {
 	margin: .3rem;
+
 	h1 {
 		text-align: center;
 		margin-bottom: 0;
+		font-size: $f-size * 1.7;
 	}
-	p{
+
+	p {
+		font-size: $f-size * 1.13;
 		text-align: center;
 		margin-top: 0;
 		margin-bottom: 3rem;
 	}
 }
+
+main {
+	padding: $pad-half;
+}
+
+section#main-info {
+	@include grid($rowz, $colz, $gap);
+	grid-template-columns: 30% 60%;
+	grid-column-start: 2;
+	width: auto;
+	margin: 1rem;
+}
+
+aside.side-panel {
+	
+	
+	background-color: #045de9;
+	background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+	
+	border: 2px solid;
+	margin: .5rem;
+
+	h2 {
+		color: $purple-header;
+		text-align: center;
+	} 
+	ul {
+		color: #530f0f;
+		width: auto;
+		line-height: 1.4;
+		font-size: $f-size * .9;
+		padding: 20px;
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+	li {
+		padding-bottom: $pad-half;
+	}
+}
+
+
+
 #skills {
 
 	ul {
@@ -19,14 +70,17 @@ header {
 		margin-bottom: 2rem;
 	}
 }
-#job-history-1 {
+
+.job-history {
 	h3 {
 		margin-bottom: 0;
 	}
+
 	p {
 		margin-top: .2rem;
 	}
-	li{
+
+	li {
 		margin: .5rem;
 	}
 }

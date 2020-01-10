@@ -1,0 +1,15 @@
+@mixin grid($rowsz, $colsz, $gap) {
+	display: grid;
+	grid-gap: $gap;
+}
+@mixin MQ($canvas) {
+	@if $canvas == Mplus {
+		@media only screen and (min-width: $M) { @content; }
+	}
+	@else if $canvas == Lplus {
+		@media only screen and (min-width: $L) { @content; }
+	}
+}
+@mixin font-size($f-size:1rem){
+	font-size: $f-size;
+}

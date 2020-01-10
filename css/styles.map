@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "../scss/styles.css",
+	"sources": [
+		"../scss/styles.scss",
+		"../scss/_base.scss",
+		"../scss/_variables.scss",
+		"../scss/_fonts.scss",
+		"../scss/_mixins.scss",
+		"../scss/_modules.scss"
+	],
+	"sourcesContent": [
+		"@import \"base.scss\";\r\n@import \"fonts.scss\";\r\n@import \"mixins.scss\";\r\n@import \"variables.scss\";\r\n@import \"modules.scss\";\r\n",
+		"@import \"variables.scss\";\r\n\r\nhtml {\r\n\tfont-size: $f-size;\r\n\tline-height: 1.2;\r\n\tfont-family: $try-this-one;\r\n}\r\nbody {\r\n\tbox-sizing: border-box;\r\n}\r\n\r\nheader {\r\n\tmargin: 1rem;\r\n}\r\n\r\n\r\n\r\n",
+		"// Default font stack values\r\n$body_font: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n$caption_font: Constantia, \"Lucida Bright\", \"DejaVu Serif\", Georgia, serif;\r\n$header_font: 'SansationRegular', \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n$tagline_font: 'SansationItalic', \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n$try-this-one: 'Bungee', 'cursive', '';\r\n\r\n// Media Query Breakpoint variables\r\n// ====================================================================\r\n$M: 30.0625em; // 481px wide with 16px body font\r\n$L: 48.0625em; // 769px wide with 16px body font\r\n\r\n// Default value for border-radius\r\n// ====================================================================\r\n$border-radius: 5px;\r\n\r\n// Grid layout\r\n$rowz: 1;\r\n$colz: 2;\r\n$gap: 5px;\r\n\r\n\r\n// Color variables\r\n$background: white;\r\n\r\n\r\n// Spacing variables\r\n$f-size: 1rem;",
+		"// ---------------------------------------------\r\n// \t\tFONT FACES GO HERE TO INPORT FONTS\r\n@font-face {\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}",
+		"@mixin grid($rowsz, $colsz, $gap) {\r\n\tdisplay: grid;\r\n\tgrid-gap: $gap;\r\n}\r\n@mixin MQ($canvas) {\r\n\t@if $canvas == Mplus {\r\n\t\t@media only screen and (min-width: $M) { @content; }\r\n\t}\r\n\t@else if $canvas == Lplus {\r\n\t\t@media only screen and (min-width: $L) { @content; }\r\n\t}\r\n}\r\n@mixin font-size($f-size:1rem){\r\n\tfont-size: $f-size;\r\n}\r\n",
+		"@import \"mixins.scss\";\r\n@import \"variables.scss\";\r\n\r\n\r\nheader {\r\n\tmargin: .3rem;\r\n\th1 {\r\n\t\ttext-align: center;\r\n\t\tmargin-bottom: 0;\r\n\t\tfont-size: $f-size * 1.7;\r\n\t}\r\n\tp{\r\n\t\tfont-size: $f-size * 1.13;\r\n\t\ttext-align: center;\r\n\t\tmargin-top: 0;\r\n\t\tmargin-bottom: 3rem;\r\n\t}\r\n}\r\nsection#main-info {\r\n\t@include grid($rowz, $colz, $gap);\r\n\tgrid-template-columns: 30% 60%;\t\r\n\tgrid-column-start: 2;\r\n\twidth: auto;\r\n\tmargin: 1rem;\r\n}\r\naside.side-panel {\r\n\tborder: 2px solid;\r\n\tpadding: 10px;\r\n\tmargin: 1rem;\r\n}\r\nmain {\r\n\tpadding: .5em;\r\n}\r\n#skills {\r\n\r\n\tul {\r\n\t\tdisplay: grid;\r\n\t\tgrid-template-columns: repeat(2, 1fr);\r\n\t\tgrid-gap: 8px;\r\n\t\tmargin-bottom: 2rem;\r\n\t}\r\n}\r\n.job-history {\r\n\th3 {\r\n\t\tmargin-bottom: 0;\r\n\t}\r\n\tp {\r\n\t\tmargin-top: .2rem;\r\n\t}\r\n\tli{\r\n\t\tmargin: .5rem;\r\n\t}\r\n}"
+	],
+	"mappings": ";ACEA,AAAA,IAAI,CAAC;EACJ,SAAS,ECwBD,IAAI;EDvBZ,WAAW,EAAE,GAAI;EACjB,WAAW,ECAG,QAAQ,EAAE,SAAS,EAAE,EAAE,GDCrC;;;AACD,AAAA,IAAI,CAAC;EACJ,UAAU,EAAE,UAAW,GACvB;;;AAED,AAAA,MAAM,CAAC;EACN,MAAM,EAAE,IAAK,GACb;;AEXD,UAAU;EACN,WAAW,EAAE,4BAA6B;;;AEC9C,AAAA,MAAM,CAAC;EACN,MAAM,EAAE,KAAM,GAYd;;EAbD,AAEC,MAFK,CAEL,EAAE,CAAC;IACF,UAAU,EAAE,MAAO;IACnB,aAAa,EAAE,CAAE;IACjB,SAAS,EAAE,MAAO,GAClB;;EANF,AAOC,MAPK,CAOL,CAAC,CAAA;IACA,SAAS,EAAE,OAAO;IAClB,UAAU,EAAE,MAAO;IACnB,UAAU,EAAE,CAAE;IACd,aAAa,EAAE,IAAK,GACpB;;;AAEF,AAAO,OAAA,AAAA,UAAU,CAAC;EDjBjB,OAAO,EAAE,IAAK;EACd,QAAQ,EFiBH,GAAG;EGCR,qBAAqB,EAAE,OAAQ;EAC/B,iBAAiB,EAAE,CAAE;EACrB,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,IAAK,GACb;;;AACD,AAAK,KAAA,AAAA,WAAW,CAAC;EAChB,MAAM,EAAE,SAAU;EAClB,OAAO,EAAE,IAAK;EACd,MAAM,EAAE,IAAK,GACb;;;AACD,AAAA,IAAI,CAAC;EACJ,OAAO,EAAE,IAAK,GACd;;;AACD,AAEC,OAFM,CAEN,EAAE,CAAC;EACF,OAAO,EAAE,IAAK;EACd,qBAAqB,EAAE,cAAM;EAC7B,QAAQ,EAAE,GAAI;EACd,aAAa,EAAE,IAAK,GACpB;;;AAEF,AACC,YADW,CACX,EAAE,CAAC;EACF,aAAa,EAAE,CAAE,GACjB;;;AAHF,AAIC,YAJW,CAIX,CAAC,CAAC;EACD,UAAU,EAAE,KAAM,GAClB;;;AANF,AAOC,YAPW,CAOX,EAAE,CAAA;EACD,MAAM,EAAE,KAAM,GACd",
+	"names": []
+}

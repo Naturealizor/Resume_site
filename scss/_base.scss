@@ -1,10 +1,17 @@
+@import "variables.scss";
+
 html {
-	font-size: 1rem;
-	line-height: 1;
+	font-size: $f-size;
+	line-height: 1.2;
+	font-family: $header_font;
 }
 body {
 	box-sizing: border-box;
 }
+
 header {
 	margin: 1rem;
 }
+
+
+

@@ -1,0 +1,30 @@
+// Default font stack values
+$body_font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$caption_font: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+$header_font: 'SansationRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$tagline_font: 'SansationItalic', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$try-this-one: 'Bungee', 'cursive', '';
+
+// Media Query Breakpoint variables
+// ====================================================================
+$M: 30.0625em; // 481px wide with 16px body font
+$L: 48.0625em; // 769px wide with 16px body font
+
+// Default value for border-radius
+// ====================================================================
+$border-radius: 5px;
+
+// Grid layout
+$rowz: 1;
+$colz: 2;
+$gap: 5px;
+
+
+// Color variables
+$background: white;
+$purple-header: #6209b4;
+
+
+// Spacing variables
+$f-size: 1rem;
+$pad-half: .5rem;
