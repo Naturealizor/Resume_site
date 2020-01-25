@@ -23,7 +23,7 @@ main {
 	padding: $pad-half;
 }
 
-section#main-info {
+section.main-info {
 	@include grid($rowz, $colz, $gap);
 	grid-template-columns: 30% 60%;
 	grid-column-start: 2;
@@ -57,8 +57,23 @@ aside.side-panel {
 	li {
 		padding-bottom: $pad-half;
 	}
+	
 }
 
+#side-panel-skills {
+	text-align: center;
+	text-decoration: none;
+
+	ul {
+		list-style: none;
+	}
+}
+
+#side-panel-certs {
+	p {
+		margin-top: 0;
+	}
+}
 
 
 #skills {

@@ -47,7 +47,7 @@ main {
 }
 
 /* line 26, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
-section#main-info {
+section.main-info {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 30% 60%;
@@ -86,7 +86,23 @@ aside.side-panel li {
   padding-bottom: 0.5rem;
 }
 
-/* line 66, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 63, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+#side-panel-skills {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 67, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+#side-panel-skills ul {
+  list-style: none;
+}
+
+/* line 73, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+#side-panel-certs p {
+  margin-top: 0;
+}
+
+/* line 81, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
 #skills ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -94,17 +110,17 @@ aside.side-panel li {
   margin-bottom: 2rem;
 }
 
-/* line 75, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 90, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
 .job-history h3 {
   margin-bottom: 0;
 }
 
-/* line 79, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 94, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
 .job-history p {
   margin-top: .2rem;
 }
 
-/* line 83, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 98, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
 .job-history li {
   margin: .5rem;
 }
