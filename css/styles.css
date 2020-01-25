@@ -1,16 +1,16 @@
-/* line 3, ../../../Documents/GitHub/Resume_site/scss/_base.scss */
+/* line 3, C:/Projects/GitHub/Resume_site/scss/_base.scss */
 html {
   font-size: 1rem;
   line-height: 1.2;
   font-family: "SansationRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 8, ../../../Documents/GitHub/Resume_site/scss/_base.scss */
+/* line 8, C:/Projects/GitHub/Resume_site/scss/_base.scss */
 body {
   box-sizing: border-box;
 }
 
-/* line 12, ../../../Documents/GitHub/Resume_site/scss/_base.scss */
+/* line 12, C:/Projects/GitHub/Resume_site/scss/_base.scss */
 header {
   margin: 1rem;
 }
@@ -21,19 +21,19 @@ header {
   font-weight: normal;
 }
 
-/* line 5, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 5, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 header {
   margin: .3rem;
 }
 
-/* line 8, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 8, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 header h1 {
   text-align: center;
   margin-bottom: 0;
   font-size: 1.7rem;
 }
 
-/* line 14, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 14, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 header p {
   font-size: 1.13rem;
   text-align: center;
@@ -41,12 +41,12 @@ header p {
   margin-bottom: 3rem;
 }
 
-/* line 22, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 22, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 main {
   padding: 0.5rem;
 }
 
-/* line 26, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 26, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 section.main-info {
   display: grid;
   grid-gap: 5px;
@@ -56,7 +56,7 @@ section.main-info {
   margin: 1rem;
 }
 
-/* line 34, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 34, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 aside.side-panel {
   background-color: #045de9;
   background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
@@ -64,45 +64,46 @@ aside.side-panel {
   margin: .5rem;
 }
 
-/* line 43, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 43, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 aside.side-panel h2 {
   color: #6209b4;
   text-align: center;
 }
 
-/* line 47, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 47, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 aside.side-panel ul {
   color: #530f0f;
   width: auto;
   line-height: 1.4;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 20px;
   padding-top: 0;
   margin-top: 0;
 }
 
-/* line 57, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 57, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 aside.side-panel li {
   padding-bottom: 0.5rem;
 }
 
-/* line 63, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 63, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 #side-panel-skills {
   text-align: center;
   text-decoration: none;
 }
 
-/* line 67, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 67, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 #side-panel-skills ul {
   list-style: none;
+  font-size: 1.1rem;
 }
 
-/* line 73, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 74, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 #side-panel-certs p {
   margin-top: 0;
 }
 
-/* line 81, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 83, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 #skills ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -110,19 +111,19 @@ aside.side-panel li {
   margin-bottom: 2rem;
 }
 
-/* line 90, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 92, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 .job-history h3 {
   margin-bottom: 0;
 }
 
-/* line 94, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 96, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 .job-history p {
   margin-top: .2rem;
 }
 
-/* line 98, ../../../Documents/GitHub/Resume_site/scss/_modules.scss */
+/* line 100, C:/Projects/GitHub/Resume_site/scss/_modules.scss */
 .job-history li {
   margin: .5rem;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=../css/styles.map */
