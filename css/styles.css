@@ -64,13 +64,13 @@ aside.side-panel {
   margin: .5rem;
 }
 
-/* line 43, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 41, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 aside.side-panel h2 {
   color: #6209b4;
   text-align: center;
 }
 
-/* line 47, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 45, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 aside.side-panel ul {
   color: #530f0f;
   width: auto;
@@ -81,29 +81,29 @@ aside.side-panel ul {
   margin-top: 0;
 }
 
-/* line 57, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 55, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 aside.side-panel li {
   padding-bottom: 0.5rem;
 }
 
-/* line 63, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 61, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 #side-panel-skills {
   text-align: center;
   text-decoration: none;
 }
 
-/* line 67, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 65, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 #side-panel-skills ul {
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
-/* line 74, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 72, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 #side-panel-certs p {
   margin-top: 0;
 }
 
-/* line 83, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 81, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 #skills ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -111,17 +111,17 @@ aside.side-panel li {
   margin-bottom: 2rem;
 }
 
-/* line 92, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 90, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 .job-history h3 {
   margin-bottom: 0;
 }
 
-/* line 96, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 94, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 .job-history p {
   margin-top: .2rem;
 }
 
-/* line 100, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 98, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 .job-history li {
   margin: .5rem;
 }
