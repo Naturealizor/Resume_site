@@ -1,5 +1,28 @@
 {
+  "name": "node",
+  "version": "16.5.0",
+  "description": "node",
+  "main": "index.js",
+  "keywords": [
+    "runtime"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aredridel/node-bin-gen"
+  },
+  "scripts": {
+    "preinstall": "node installArchSpecificPackage",
+    "start": "node index.html"
+  },
+  "bin": {
+    "node": "bin/node.exe"
+  },
   "dependencies": {
-    "node": "^16.5.0"
+    "node-bin-setup": "^1.0.0"
+  },
+  "license": "ISC",
+  "author": "",
+  "engines": {
+    "npm": ">=5.0.0"
   }
 }
