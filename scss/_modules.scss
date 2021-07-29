@@ -73,7 +73,7 @@ aside.side-panel {
 #side-panel-certs {
   p {
     margin-top: 0;
-    padding-right: 0;
+    padding-right: 10px;
     padding-left: 10px;
 
     // font-size: 18px;
@@ -81,15 +81,18 @@ aside.side-panel {
 
   ul {
     text-align: center;
+    padding: 25px;
   }
 }
 
 #skills {
+  line-height: 1.5rem;
   ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 8px;
-    margin-bottom: 2rem;
+    grid-gap: 5px;
+    
+    // margin-bottom: 2rem;
   }
 }
 
