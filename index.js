@@ -27,20 +27,20 @@
 //   res.end("hi world");
 // }
 
-var fs = require('fs'),
-    http = require('http');
+// var fs = require('fs'),
+//     http = require('http');
 
-http.createServer(function (req, res) {
-  fs.sendFile(__dirname+"index.html", function (err,data) {
-    if (err) {
-      res.writeHead(404);
-      res.end(JSON.stringify(err));
-      return;
-    }
-    res.writeHead(200);
-    res.end(data);
-  });
-}).listen(8080);
+// http.createServer(function (req, res) {
+//   fs.sendFile(__dirname+"index.html", function (err,data) {
+//     if (err) {
+//       res.writeHead(404);
+//       res.end(JSON.stringify(err));
+//       return;
+//     }
+//     res.writeHead(200);
+//     res.end(data);
+//   });
+// }).listen(8080);
 
 
 
