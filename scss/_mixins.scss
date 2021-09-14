@@ -13,3 +13,24 @@
 @mixin font-size($f-size:1rem){
 	font-size: $f-size;
 }
+
+// Pulled from itnext.io (full link below)
+
+// @mixin for-phone-only {
+// 	@media (max-width: 599px) { @content; }
+//   }
+//   @mixin for-tablet-portrait-up {
+// 	@media (min-width: 600px) { @content; }
+//   }
+//   @mixin for-tablet-landscape-up {
+// 	@media (min-width: 900px) { @content; }
+//   }
+//   @mixin for-desktop-up {
+// 	@media (min-width: 1200px) { @content; }
+//   }
+//   @mixin for-big-desktop-up {
+// 	@media (min-width: 1800px) { @content; }
+//   }
+
+
+// https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
