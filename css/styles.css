@@ -21,109 +21,42 @@ header {
   font-weight: normal;
 }
 
-/* line 4, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-header {
-  margin: 0.3rem;
+/* line 8, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+html {
+  background: url(https://images.unsplash.com/photo-1640973023201-829349b96ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
 }
 
-/* line 7, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-header h1 {
-  text-align: center;
-  margin-bottom: 0;
-  font-size: 1.65rem;
-}
-
-/* line 13, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-header p {
-  font-size: 1.05rem;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 1.2rem;
-}
-
-/* line 21, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-main {
-  padding: 0.5rem;
-}
-
-/* line 25, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-section.main-info {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 30% 65%;
-  grid-column-start: 2;
+/* line 18, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+h1 {
+  position: absolute;
   width: 100%;
-  margin: 1rem;
-}
-
-/* line 33, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-aside.side-panel {
-  background-color: #045de9;
-  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
-  width: 90%;
-  height: auto;
-  border: 2px solid;
-  border-radius: 5px;
+  height: 100%;
+  top: 20%;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 82px;
+  /* identical to box height */
   text-align: center;
+  color: #FDFAFF;
 }
 
-/* line 43, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-aside.side-panel h2 {
-  color: #6209b4;
+/* line 35, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+  color: white;
   text-align: center;
-  margin-top: 0.3rem;
-  margin-bottom: 0.2rem;
-}
-
-/* line 49, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-aside.side-panel ul {
-  color: #530f0f;
-  width: auto;
-  line-height: 1.2;
-  font-size: 1rem;
-  padding: 12px;
-  padding-top: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-/* line 61, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-aside.side-panel li {
-  padding-bottom: 0.5rem;
-}
-
-/* line 66, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-#side-panel-skills {
-  text-align: center;
-  text-decoration: none;
-}
-
-/* line 70, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-#side-panel-skills ul {
-  list-style: none;
-  font-size: 1rem;
-}
-
-/* line 77, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-#side-panel-certs ul {
-  text-align: center;
-  padding: 18px;
-}
-
-/* line 95, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-.job-history h3 {
-  margin-bottom: 0;
-}
-
-/* line 99, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-.job-history p {
-  margin-top: 0.2rem;
-}
-
-/* line 103, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-.job-history li {
-  margin: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
