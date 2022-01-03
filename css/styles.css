@@ -33,6 +33,21 @@ html {
 }
 
 /* line 18, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+.top-nav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* line 23, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+.top-nav a {
+  display: inline-block;
+  color: #FDFAFF;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+}
+
+/* line 31, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 h1 {
   position: absolute;
   width: 100%;
@@ -48,7 +63,7 @@ h1 {
   color: #FDFAFF;
 }
 
-/* line 35, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
+/* line 48, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 footer {
   position: fixed;
   left: 0;
