@@ -66,6 +66,7 @@ h5 {
     font-family: var(--headingFont);
     font-weight: 400;
     line-height: 1.15;
+    text-align: center;
 }
 
 h1 {
@@ -113,15 +114,7 @@ blockquote {
 
 
 header {
-    margin: 0.5rem;
-
-    
-
-    
-}
-
-h1 {
-    
+    margin: 0.5rem;   
 }
 
 p {
@@ -137,9 +130,9 @@ main {
     text-align: center;
 }
 
-section.main-info {
+// section.main-info {
 
-}
+// }
 
 // aside.side-panel {
 //     // Create variables for the colors used
