@@ -43,6 +43,12 @@ body {
     line-height: 1.65;
 }
 
+main {
+    display: flex;
+    // flex-direction: column;
+    // flex: 5em 10em;
+}
+
 p {
     margin-bottom: 1.15rem;
     text-align: center; 
@@ -108,6 +114,14 @@ blockquote {
     background: white;
 }
 
+aside {
+    // @media screen and (min-width: 650px) {
+        h2 {
+            text-align: left;
+        }
+    // }
+}
+
 
 
 
@@ -119,12 +133,14 @@ blockquote {
 }
 
 // for-tablet-portrait-up
-@media screen and (min-width: 600px) {
-    
-    .side-panel {
-        display: flex;
-        flex-direction: row;
+// added 'only'
+@media only screen and (min-width: 600px) {
+    h2 {
+        text-align: left;
     }
+    
+    #main-info {
+        flex-direction: row;
 }
 
 // for-tablet-landscape-up
