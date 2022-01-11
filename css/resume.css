@@ -45,8 +45,8 @@ body {
 
 main {
     display: flex;
-    // flex-direction: column;
-    // flex: 5em 10em;
+    /* // flex-direction: column;
+    // flex: 5em 10em; */
 }
 
 p {
@@ -84,7 +84,7 @@ h2 {
     font-size: var(--h2);
 }
 
-// h3 {
+/* // h3 {
 //     font-size: var(--h3);
 // }
 
@@ -94,7 +94,7 @@ h2 {
 
 // h5 {
 //     font-size: var(--h5);
-// }
+// } */
 
 /* End typescaling */
 
@@ -114,26 +114,26 @@ blockquote {
     background: white;
 }
 
-aside {
+/* aside {
     // @media screen and (min-width: 650px) {
         h2 {
             text-align: left;
         }
     // }
-}
+} */
 
 
 
 
-// for-phone-only
+/* // for-phone-only */
 @media screen and (max-width: 599px) {
     li::marker {
         color: var(--black);
     }
 }
 
-// for-tablet-portrait-up
-// added 'only'
+/* // for-tablet-portrait-up
+// added 'only' */
 @media only screen and (min-width: 600px) {
     h2 {
         text-align: left;
@@ -143,13 +143,13 @@ aside {
         flex-direction: row;
 }
 
-// for-tablet-landscape-up
+/* // for-tablet-landscape-up */
 @media screen and (min-width: 900px) {}
 
-// for-desktop-up
+/* // for-desktop-up */
 @media screen and (min-width: 1200px) {}
 
-// for-big-desktop-up
+/* // for-big-desktop-up */
 @media screen and (min-width: 1800px) {
     main {
         display: inline-flex;
@@ -175,7 +175,7 @@ aside {
 
 
 
-
+/* 
 // aside.side-panel {
 //     // Create variables for the colors used
 //     background: #045de9 linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
@@ -251,4 +251,4 @@ aside {
 //     li {
 //         margin: 0.5rem;
 //     }
-// }
+// } */
