@@ -1,55 +1,65 @@
 {
-  "editor.linkedEditing": true,
-  "editor.mouseWheelZoom": true,
-  "editor.wordWrap": "on",
-  "editor.cursorBlinking": "phase",
-  "npm.enableRunFromFolder": true,
-  "npm.packageManager": "npm",
-  "open-in-browser.default": "Brave",
-  "prettier.singleQuote": true,
-  "prettier.withNodeModules": true,
-  "html.format.indentInnerHtml": true,
-  "html-css-class-completion.CSSLanguages": ["css", "sass", "scss"],
-  "html-css-class-completion.HTMLLanguages": [
-    "html",
-    "vue",
-    "razor",
-    "blade",
-    "handlebars",
-    "twig",
-    "django-html",
-    "php",
-    "markdown",
-    "erb",
-    "ejs",
-    "svelte"
-  ],
-  "html-css-class-completion.enableEmmetSupport": true,
-  "html-css-class-completion.JavaScriptLanguages": [
-    "javascript",
-    "javascriptreact",
-    "typescriptreact"
-  ],
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "source": "Git Bash"
-    },
-    "Cmdr": {
-      "path": ["C:\\cmdr\\Cmder.exe"],
-      "args": [],
-      "icon": "terminal"
+    "editor.linkedEditing": true,
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "editor.cursorBlinking": "phase",
+    "npm.enableRunFromFolder": true,
+    "npm.packageManager": "npm",
+    "open-in-browser.default": "Brave",
+    "prettier.singleQuote": true,
+    "prettier.withNodeModules": true,
+    "html.format.indentInnerHtml": true,
+    "html-css-class-completion.CSSLanguages": [
+
+        "css",
+        "sass",
+        "scss"
+    ],
+    "html-css-class-completion.HTMLLanguages": [
+
+        "html",
+        "vue",
+        "razor",
+        "blade",
+        "handlebars",
+        "twig",
+        "django-html",
+        "php",
+        "markdown",
+        "erb",
+        "ejs",
+        "svelte"
+    ],
+    "html-css-class-completion.enableEmmetSupport": true,
+    "html-css-class-completion.JavaScriptLanguages": [
+
+        "javascript",
+        "javascriptreact",
+        "typescriptreact"
+    ],
+    "terminal.integrated.profiles.windows": {
+
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Cmdr": {
+            "path": [
+                "C:\\cmdr\\Cmder.exe"
+            ],
+            "args": [],
+            "icon": "terminal"
+        }
     }
-  }
 }
