@@ -41,12 +41,12 @@ body {
     font-family: var(--bodyFont);
     font-weight: 400;
     line-height: 1.65;
+    background: var(--background);
+    color: var(--textColor);
 }
 
 main {
     display: flex;
-    /* // flex-direction: column;
-    // flex: 5em 10em; */
 }
 
 p {
@@ -98,11 +98,6 @@ h2 {
 
 /* End typescaling */
 
-body {
-    background: var(--background);
-    color: var(--textColor);
-}
-
 .dark {
     --background: var(--black);
     --textColor: var(--lightGrey);
@@ -113,17 +108,6 @@ blockquote {
     padding: 2em;
     background: white;
 }
-
-/* aside {
-    // @media screen and (min-width: 650px) {
-        h2 {
-            text-align: left;
-        }
-    // }
-} */
-
-
-
 
 /* // for-phone-only */
 @media screen and (max-width: 599px) {
@@ -141,6 +125,7 @@ blockquote {
     
     #main-info {
         flex-direction: row;
+    }
 }
 
 /* // for-tablet-landscape-up */
@@ -156,99 +141,3 @@ blockquote {
         flex-direction: row;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-// aside.side-panel {
-//     // Create variables for the colors used
-//     background: #045de9 linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
-//     width: 90%;
-//     height: auto;
-//     border: 2px solid;
-//     border-radius: $border-radius;
-//      margin: 0.5rem;
-//     text-align: center;
-
-//     h2 {
-//         color: $purple-header;
-//         text-align: center;
-//         margin: 0.3rem;
-//     }
-
-//     ul {
-//         color: #530f0f;     //Create variables for the colors used
-//         width: auto;
-//         line-height: 1.2;
-//         font-size: $base-size;
-//         padding: 12px;      // Convert into padding shorthand
-//         padding-top: 0;
-//         margin-top: 0;      //Convert into margin shorthand
-//         margin-bottom: 0;
-//         list-style: none;
-//     }
-
-//     li {
-//         padding-bottom: $pad-half;
-//     }
-// }
-
-// #side-panel-skills {
-//     text-align: center;
-//     text-decoration: none;
-
-//     ul {
-//         list-style: none;
-//         font-size: $base-size;
-//     }
-// }
-
-// #side-panel-certs {
-//     ul {
-//         text-align: center;
-//         padding: 18px;
-//     }
-// }
-
-//  #skills {
-//    line-height: 1.3rem;
-//    ul {
-//      display: grid;
-//      grid-template-columns: repeat(2, 1fr);
-//      grid-gap: 5px;
-
-//       margin-bottom: 2rem;
-//    }
-//  }
-
-// .job-history {
-
-//     /* Look into why this is a class and the others are IDs */
-//     h3 {
-//         margin-bottom: 0;
-//     }
-
-//     p {
-//         margin-top: 0.2rem;
-//     }
-
-//     li {
-//         margin: 0.5rem;
-//     }
-// } */
