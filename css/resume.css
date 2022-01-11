@@ -20,7 +20,7 @@
     /* --headingFont: "Space Mono", monospace; */
     --headingFont: Georgia;
     --bodyFont: "Work Sans", sans-serif;
-    --h1: 2.852em;
+    --h1: 2.5em;
     --h2: 2em;
     --h3: 1.8em;
     --h4: 1.563em;
@@ -31,7 +31,7 @@
 /* FROM Type Scale */
 
 html {
-    font-size: 90%;
+    font-size: 110%;
 }
 
 /* 18px */
@@ -40,22 +40,30 @@ header {
     margin: 0.5rem;
 }
 
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .home-btn {
+} */
+
 body {
     font-family: var(--bodyFont);
     font-weight: 400;
-    line-height: 1.65;
+    line-height: 1.45;
     background: var(--background);
     color: var(--textColor);
-    padding: 10px 30px;
+    padding: 5px 10px;
 }
 
 main, #main-info {
     display: flex;
-    max-width: 100%;
-    overflow: hidden;
     gap: 5%;
-    /* flex-wrap: no-wrap; */
     justify-content: space-evenly;
+    margin-left: 1em;
+    margin-right: 2.3em;
+    align-items: flex-start;
 }
 
 
@@ -77,25 +85,29 @@ h2,
 h3,
 h4,
 h5 {
-    margin: 1.75rem 0 1.05rem;
+    /* margin: 1.25rem 0 1.05rem; */
     font-family: var(--headingFont);
     font-weight: 500;
-    line-height: 1.15;
+    line-height: 1;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 h1 {
     font-size: var(--h1);
     text-align: center;
-    left: 50%;
+    /* left: 50%; */
     width: 100%;
     margin-top: 0;
+    margin-bottom: -.5em; 
 }
 
 h2 {
     font-size: var(--h2);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     background: var(--businessGrey);
+    margin-bottom: .5em;
 }
 
 h3 {
@@ -117,21 +129,18 @@ h5 {
     --textColor: var(--lightGrey);
 }
 
-blockquote {
-    margin: 10px;
-    padding: 3em;
-    background: white;
-}
-
 ul {
-    
     text-align: center;
     padding-left: 2em;
-    /* background: var(--darkBlue);  */
 }
 
 li {
     text-align: start;
+}
+
+.side-panel {
+    width: 30%;
+    align-items: center;
 }
 
 /* // for-phone-only */
@@ -141,7 +150,7 @@ li {
     }
     body {
 
-        font-size: 85%; 
+        font-size: 95%; 
     }
 }    
 
