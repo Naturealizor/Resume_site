@@ -120,24 +120,20 @@ blockquote {
 // added 'only' */
 @media only screen and (min-width: 600px) {
     h2 {
-        text-align: left;
-    }
+        text-align: left;}
     
-    #main-info {
-        flex-direction: row;
-    }
-}
 
 /* // for-tablet-landscape-up */
-@media screen and (min-width: 900px) {}
+    @media screen and (min-width: 900px) {}
 
-/* // for-desktop-up */
-@media screen and (min-width: 1200px) {}
+    /* // for-desktop-up */
+    @media screen and (min-width: 1200px) {}
 
-/* // for-big-desktop-up */
-@media screen and (min-width: 1800px) {
-    main {
-        display: inline-flex;
-        flex-direction: row;
+    /* // for-big-desktop-up */
+    @media screen and (min-width: 1800px) {
+        main {
+            display: inline-flex;
+            flex-direction: row;
+        }
     }
-}
+
