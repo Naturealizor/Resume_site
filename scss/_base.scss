@@ -1,9 +1,9 @@
 @import "variables.scss";
 
 html {
-	font-size: $f-size;
+	font-size: $base-size;
 	line-height: 1.2;
-	font-family: $header_font;
+	font-family: $body_font;
 }
 body {
 	box-sizing: border-box;
