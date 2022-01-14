@@ -1,1 +1,90 @@
-html{font-size:1rem;line-height:1.2;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}body{box-sizing:border-box}header{margin:1rem}html{background:url(https://images.unsplash.com/photo-1640973023201-829349b96ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;height:100%;overflow:hidden}.topNav{background-color:transparent;overflow:hidden}.topNav a{display:inline-block;color:#FDFAFF;text-align:center;text-decoration:none;padding:15px 15px}h1{font-family:Lora;font-style:normal;font-weight:normal;font-size:64px;text-align:center;color:#e8e4eb}.siteFooter{position:fixed;left:0;bottom:0;width:100%;background:transparent;color:white;text-align:center}
+
+:root {
+  /* Define Colors as colors */
+  --green: #00ebc7;
+  --red: #ff5470;
+  --yellow: #fde24f;
+  --black: #1b2d45;
+  --darkBlue: #00214d;
+  --grey: #bfbfbf;
+  --lightGrey: #f2f4f6;
+  --businessGrey: #e5ebf1;
+  --purple: #661abd88;
+  --darkPurple: #441372;
+  --lightPurple: #6209b4;
+
+  /* Define Colors intentions */
+  --background: var(--lightGrey);
+  --textColor: var(--black);
+
+  /* Type */
+  /* --headingFont: "Space Mono", monospace; */
+  --headingFont: Georgia;
+  --bodyFont: "Work Sans", sans-serif;
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --h4: 1.563em;
+  --h5: 1.25em;
+  --smallText: 0.8em;
+  --htmlFont: 112.5%;
+
+
+}
+
+html {
+  background: url(https://images.unsplash.com/photo-1640973023201-829349b96ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.topNav {
+  background-color: transparent;
+}
+
+.topNav a {
+  display: inline-block;
+  color: #FDFAFF;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+}
+
+h1 {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  text-align: center;
+  color: #e8e4eb;
+  text-shadow: 2px 2px #000000;
+  margin-top: 20%;
+}
+
+.siteFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+  color: white;
+  text-align: center;
+}
+
+html {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+header {
+  margin: 1rem;
+}
