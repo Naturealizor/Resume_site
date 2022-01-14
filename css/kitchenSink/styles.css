@@ -23,12 +23,13 @@
     --h4: 1.563em;
     --h5: 1.25em;
     --smallText: 0.8em;
+    --htmlText: 112.5%;
 }
 
 /* FROM Type Scale */
 
 html {
-    font-size: 112.5%;
+    font-size: var(--htmlText);
 } /* 18px */
 
 body {

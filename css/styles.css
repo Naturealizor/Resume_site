@@ -1,27 +1,37 @@
-/* line 3, ../../../../../Projects/GitHub/Resume_site/scss/_base.scss */
-html {
-  font-size: 1rem;
-  line-height: 1.2;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+:root {
+  /* Define Colors as colors */
+  --green: #00ebc7;
+  --red: #ff5470;
+  --yellow: #fde24f;
+  --black: #1b2d45;
+  --darkBlue: #00214d;
+  --grey: #bfbfbf;
+  --lightGrey: #f2f4f6;
+  --businessGrey: #e5ebf1;
+  --purple: #661abd88;
+  --darkPurple: #441372;
+  --lightPurple: #6209b4;
+
+  /* Define Colors intentions */
+  --background: var(--lightGrey);
+  --textColor: var(--black);
+
+  /* Type */
+  /* --headingFont: "Space Mono", monospace; */
+  --headingFont: Georgia;
+  --bodyFont: "Work Sans", sans-serif;
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --h4: 1.563em;
+  --h5: 1.25em;
+  --smallText: 0.8em;
+  --htmlFont: 112.5%;
+
+
 }
 
-/* line 8, ../../../../../Projects/GitHub/Resume_site/scss/_base.scss */
-body {
-  box-sizing: border-box;
-}
-
-/* line 12, ../../../../../Projects/GitHub/Resume_site/scss/_base.scss */
-header {
-  margin: 1rem;
-}
-
-@font-face {
-  font-family: Arial, Helvetica, sans-serif;
-  src: font-url("fonts/Sansation/Sansation_Regular-webfont.woff") format("woff");
-  font-weight: normal;
-}
-
-/* line 8, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 html {
   background: url(https://images.unsplash.com/photo-1640973023201-829349b96ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -32,14 +42,11 @@ html {
   overflow: hidden;
 }
 
-/* line 18, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-.top-nav {
+.topNav {
   background-color: transparent;
-  overflow: hidden;
 }
 
-/* line 23, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-.top-nav a {
+.topNav a {
   display: inline-block;
   color: #FDFAFF;
   text-align: center;
@@ -47,24 +54,18 @@ html {
   padding: 15px 15px;
 }
 
-/* line 31, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
 h1 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 20%;
   font-family: Lora;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
-  line-height: 82px;
-  /* identical to box height */
   text-align: center;
-  color: #FDFAFF;
+  color: #e8e4eb;
+  text-shadow: 2px 2px #000000;
+  margin-top: 20%;
 }
 
-/* line 48, ../../../../../Projects/GitHub/Resume_site/scss/_modules.scss */
-footer {
+.siteFooter {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -74,4 +75,16 @@ footer {
   text-align: center;
 }
 
-/*# sourceMappingURL=styles.css.map */
+html {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+header {
+  margin: 1rem;
+}
