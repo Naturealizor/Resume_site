@@ -28,16 +28,24 @@
   --h5: 1.25em;
   --smallText: 0.8em;
   --htmlFont: 112.5%;
+  --bigBorderRad: 20px;
+  --smallBorderRad: 10px;
 }
 
 html {
-  background: url(../views/imgs/grandCanyonPic.jpg) no-repeat center center fixed;
+  /* background: url(../views/imgs/grandCanyonPicLarge.jpg) no-repeat center center fixed; */
+  background: url(../views/imgs/photo-1640973023201-829349b96ff6.jfif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
   overflow: hidden;
+}
+
+p {
+  text-align: center;
+  color: white;
 }
 
 .topNav {
@@ -60,7 +68,7 @@ h1 {
   text-align: center;
   color: #e8e4eb;
   text-shadow: 2px 2px #000000;
-  margin-top: 25%;
+  margin-top: 20%;
 }
 
 .siteFooter {
@@ -100,16 +108,19 @@ a:active {
 
 /* // for-phone-only */
 @media screen and (max-width: 900px) {
-
-  main,
-  #main-info {
+  
+  main {
     display: block;
     width: 100%;
     margin: auto;
   }
-
+  
   body {
     font-size: 95%;
+  }
+  
+  h1 {
+    margin-top: 26%;
   }
 }
 
