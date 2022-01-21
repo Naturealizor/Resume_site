@@ -82,6 +82,7 @@ h1 {
 
 .cardContainer {
   display: flex;
+  justify-content: space-evenly;
 }
 
 main p {
