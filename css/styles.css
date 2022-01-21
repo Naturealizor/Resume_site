@@ -19,25 +19,36 @@
 
   /* Type */
   /* --headingFont: "Space Mono", monospace; */
-  --headingFont: Georgia;
+  /* --headingFont: Georgia; */
+  --headingFont: "Open Sans", sans-serif ;
   --bodyFont: "Work Sans", sans-serif;
   --h1: 3.052em;
   --h2: 2.441em;
   --h3: 1.953em;
   --h4: 1.563em;
   --h5: 1.25em;
+  --btnText: 1.3em;
   --smallText: 0.8em;
   --htmlFont: 112.5%;
+  --bigBorderRad: 20px;
+  --smallBorderRad: 10px;
+  --subtleTextShadow: 2px 2px #000000;
 }
 
 html {
-  background: url(../views/imgs/grandCanyonPic.jpg) no-repeat center center fixed;
+  /* background: url(../views/imgs/grandCanyonPicLarge.jpg) no-repeat center center fixed; */
+  background: url(../views/imgs/photo-1640973023201-829349b96ff6.jfif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
   overflow: hidden;
+}
+
+p {
+  text-align: center;
+  color: white;
 }
 
 .topNav {
@@ -48,19 +59,25 @@ html {
   display: inline-block;
   color: #FDFAFF;
   text-align: center;
+  font-size: 25px;
   text-decoration: none;
   padding: 15px 15px;
+  
 }
 
 h1 {
-  font-family: Lora;
+  font-family: var(--headingFont);
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
   text-align: center;
   color: #e8e4eb;
-  text-shadow: 2px 2px #000000;
-  margin-top: 25%;
+  text-shadow: var(--subtleTextShadow);
+  margin: 20%;
+}
+
+p {
+  
 }
 
 .siteFooter {
@@ -73,14 +90,15 @@ h1 {
   text-align: center;
 }
 
-.btn {
+.btn a {
   padding: 6px;
   margin: 3px;
+  font-size: var(--btnText);
 }
 
 /* unvisited link */
 a:link {
-  color: var(--red);
+  color: var(--green);
 }
 
 /* visited link */
@@ -100,21 +118,45 @@ a:active {
 
 /* // for-phone-only */
 @media screen and (max-width: 900px) {
-
-  main,
-  #main-info {
+  
+  main {
     display: block;
     width: 100%;
     margin: auto;
   }
-
+  
   body {
     font-size: 95%;
   }
+  
+  h1 {
+    margin-top: 26%;
+    font-size: var(--h2);
+  }
+  .btn {
+    font-size: var(--smallText);
+  }
+}
+
+@media (orientation: landscape) {
+
+  h1 {
+    margin: 6%;
+    font-size: var(--h1);
+  }
+
+  p {
+
+  }
+  
 }
 
 /* // for-desktop-up */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1100px) {
+  h1 {
+    font-size: 85px;
+  }
+}
 
 /* // for-big-desktop-up */
 @media screen and (min-width: 1800px) {}
