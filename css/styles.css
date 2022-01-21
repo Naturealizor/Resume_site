@@ -10,7 +10,7 @@
   --businessGrey: #e5ebf1;
   --purple: #661abd88;
   --darkPurple: #441372;
-  --lightPurple: #6209b4;
+  --lightPurple: #9050cc;
   --complenentarySky: #fad7b6;
 
   /* Define Colors intentions */
@@ -123,7 +123,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: var(--green);
+  color: var(--lightPurple);
 }
 
 /* mouse over link */
@@ -133,7 +133,7 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: yellow;
+  color: var(--darkBlue);
 }
 
 /* ----------------------------------- Media Queries -----------------------------------  */
