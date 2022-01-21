@@ -1,0 +1,393 @@
+body {
+    font-size: 1em;
+    display: flex;
+    line-height: 1.5em;
+    flex-direction: column;
+    background-color: rgb(233, 229, 229);
+    font-family: $body_font;
+    @include MQ(phone) {
+        font-size: 180%;
+    }
+    @include MQ(tablet) {
+        font-size: 100%;
+        // width: 92%;
+    }
+}
+h1 {
+    font-size: 1.8em;
+    font-family: $header_font;
+}
+h2 {
+    font-size: 1.6em;
+}
+h3 {
+    font-size: 1.4em;
+}
+#branding {
+    border-bottom: $borderPurp;
+    width: 100%;
+    @include MQ(phone) {
+        font-size: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    @include MQ(tablet) {
+
+    }
+}
+main {
+    width: 70%;
+    box-sizing: border-box;
+    flex-direction: row;
+    margin-left: 20%;
+    flex-wrap: wrap;
+    @include MQ(phone) {
+        width: 70%;
+        justify-content: center;
+        margin-left: 10px;
+    }
+}
+
+.main_content_stack {
+    text-align: left;
+    margin: 25px;
+    padding-bottom: 20px;
+}
+.card_container {
+    border: solid;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    background-color: $colorBackground;
+    @include MQ(phone){
+        font-size: .7em;
+        width: 90vw;
+    }
+    .card_header {
+        border-bottom: solid;
+        padding-left: 8px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-align: center;
+        background-color: $colorGoldish;
+        margin: 0;
+        color: rgb(243, 243, 243);
+        @include MQ(phone){
+            
+        }
+    }
+    .card_desc {
+        margin-left: 10px;
+        margin-right: 5px;
+        @include MQ(phone){
+            font-size: .7em;
+        }
+    }
+    .flex_container {
+        display: flex;
+        justify-content: space-around;
+        @include MQ(phone){
+            flex-direction: column;
+            width: 160vw;
+            text-align: center;
+            margin-left: 25%;
+        }
+        @include MQ(tablet){
+            flex-direction: column;
+            width: 160vw;
+            text-align: center;
+            margin-left: 15%;
+        }
+
+    }
+    .inner_card_container {
+        flex-direction: column;
+        border: solid;
+        margin: 5px;
+        width: 25%;
+        @include MQ(phone){
+            font-size: .5em;
+        }
+    }
+    .inner_card_header {
+        border-bottom: solid #555;
+        background-color: $colorGoldish;
+        color: rgb(243, 243, 243);
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        @include MQ(phone){
+            font-size: 1.3em;
+        }
+    }
+    .inner_card_desc {
+        background-color: $colorPurp;
+        color: $colorBackground;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    .flex_container_column{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        @include MQ(phone){
+            flex-direction: column;
+            // width: 160vw;
+            text-align: center;
+            // margin-left: 25%;
+        }
+        @include MQ(tablet){
+            flex-direction: column;
+            // width: 160vw;
+            text-align: center;
+            // margin-left: 15%;
+        }
+        
+    }
+    .inner_card_container_column{
+        
+        border: solid;
+        margin: 3%;
+        width: 50%;
+        margin-left: 25%;
+        @include MQ(phone){
+            font-size: .5em;
+            // flex-direction: column;
+        }
+    }
+    .inner_card_header_column {
+        border-bottom: solid #555;
+        background-color: $colorGoldish;
+        color: rgb(243, 243, 243);
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        @include MQ(phone){
+            font-size: 1.3em;
+        }
+    }
+    .inner_card_desc_column {
+        margin: 0;
+        padding: 10px;
+        background-color: $colorPurp;
+        color: $colorBackground;
+        text-align: center;
+        @include MQ(phone){
+            // font-size: .7em;
+        }
+    }
+    .grid_container {
+        @include grid(3, 2, 10px);
+    }
+    .inner_card_container_grid {
+        border: solid;
+        margin: 3%;
+        width: 50%;
+        margin-left: 25%;
+        @include MQ(phone){
+            font-size: .5em;
+            // flex-direction: column;
+        }
+    }
+    .inner_card_header_grid {
+        border-bottom: solid #555;
+        background-color: $colorGoldish;
+        color: rgb(243, 243, 243);
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        @include MQ(phone){
+            font-size: 1.3em;
+        }
+    }
+    .inner_card_desc_grid {
+        margin: 0;
+        padding: 10px;
+        background-color: $colorPurp;
+        color: $colorBackground;
+        text-align: center;
+        @include MQ(phone){
+            // font-size: .7em;
+        }
+    }
+    .grid_container_mixed {
+        display: grid;
+        grid-gap: 10px;
+    }
+    .inner_card_container_grid2 {
+        grid-column: 1 / 4;
+        border: solid;
+        margin: 3%;
+        width: 50%;
+        margin-left: 25%;
+        @include MQ(phone){
+            font-size: .5em;
+    }
+    }
+    .inner_card_header_grid2 {
+        border-bottom: solid #555;
+        background-color: $colorGoldish;
+        color: rgb(243, 243, 243);
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        @include MQ(phone){
+            font-size: 1.3em;
+        }
+    }
+    .inner_card_desc_grid2 {
+        margin: 0;
+        padding: 10px;
+        background-color: $colorPurp;
+        color: $colorBackground;
+        text-align: center;
+        @include MQ(phone){
+            // font-size: .7em;
+        }
+    }
+    .inner_card_container_grid3 {
+        grid-column: 1 / 2;
+        border: solid;
+        margin: 3%;
+        width: 50%;
+        margin-left: 25%;
+        @include MQ(phone){
+            font-size: .5em;
+    }
+    }
+    .inner_card_header_grid3 {
+        border-bottom: solid #555;
+        background-color: $colorGoldish;
+        color: rgb(243, 243, 243);
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        @include MQ(phone){
+            font-size: 1.3em;
+        }
+    }
+    .inner_card_desc_grid3 {
+        margin: 0;
+        padding: 10px;
+        background-color: $colorPurp;
+        color: $colorBackground;
+        text-align: center;
+        @include MQ(phone){
+            // font-size: .7em;
+        }
+    }
+    .inner_card_container_grid4 {
+        grid-column: 3 / span 2;
+        border: solid;
+        margin: 3%;
+        width: 50%;
+        margin-left: 25%;
+        @include MQ(phone){
+            font-size: .5em;
+    }
+    }
+    .inner_card_header_grid4 {
+        border-bottom: solid #555;
+        background-color: $colorGoldish;
+        color: rgb(243, 243, 243);
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        @include MQ(phone){
+            font-size: 1.3em;
+        }
+    }
+    .inner_card_desc_grid4 {
+        margin: 0;
+        padding: 10px;
+        background-color: $colorPurp;
+        color: $colorBackground;
+        text-align: center;
+        @include MQ(phone){
+            // font-size: .7em;
+        }
+    }
+    .button_simple {
+        margin-left: 45%;
+        
+    }
+    .button_border {
+        border: solid;
+        text-decoration: none;
+        margin-left: 43%;
+        color: rgb(19, 59, 235);
+        background-color: rgb(235, 94, 94);
+        padding: 5px 10px 5px 10px;
+        margin-top: 15px;
+    }
+}
+.sidenav {
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    left: 10px;
+    overflow-x: hidden;
+    flex-direction: row;
+    border: 1px solid #555;
+    background-color: $colorGoldish;
+    @include MQ(phone){
+        width: auto;
+        // z-index: 1;
+        top: 30%;
+        justify-content: center;
+        position: relative;
+        margin-right: 15px;
+        
+    }
+    @include MQ(tablet){
+        width: 15%;
+        
+    }
+}
+.sidenav a {
+    padding: 6px 8px 6px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    padding: 15px;
+    justify-content: space-around;
+    @include MQ(phone) {
+        border-bottom: $borderSide;
+        margin-left: 5px;
+        padding-left: 10px;
+
+    }
+    @include MQ(tablet){
+        font-size: .6em;
+        border-bottom: $borderSide;
+    }
+
+}
+.sidenav a:hover {
+    background-color: $colorPurp;
+    color: white;
+}
+textarea {
+    width: auto;
+    // margin-right: 20%;
+    margin-bottom: 25px;
+    @include MQ(phone) {
+        width: 320px;
+        font-size: 1em;
+        word-wrap: normal;
+    }
+    @include MQ(tablet) {
+        width: 100%;
+    }
+}
+.page_footer {
+    border-top: $borderPurp;
+    text-align: center;
+    @include MQ(phone){
+        width: 110vw;
+    }
+}
