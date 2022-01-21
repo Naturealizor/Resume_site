@@ -19,17 +19,20 @@
 
   /* Type */
   /* --headingFont: "Space Mono", monospace; */
-  --headingFont: Georgia;
+  /* --headingFont: Georgia; */
+  --headingFont: "Open Sans", sans-serif ;
   --bodyFont: "Work Sans", sans-serif;
   --h1: 3.052em;
   --h2: 2.441em;
   --h3: 1.953em;
   --h4: 1.563em;
   --h5: 1.25em;
+  --btnText: 1.3em;
   --smallText: 0.8em;
   --htmlFont: 112.5%;
   --bigBorderRad: 20px;
   --smallBorderRad: 10px;
+  --subtleTextShadow: 2px 2px #000000;
 }
 
 html {
@@ -61,13 +64,13 @@ p {
 }
 
 h1 {
-  font-family: Lora;
+  font-family: var(--headingFont);
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
   text-align: center;
   color: #e8e4eb;
-  text-shadow: 2px 2px #000000;
+  text-shadow: var(--subtleTextShadow);
   margin-top: 20%;
 }
 
@@ -81,9 +84,10 @@ h1 {
   text-align: center;
 }
 
-.btn {
+.btn a {
   padding: 6px;
   margin: 3px;
+  font-size: var(--btnText);
 }
 
 /* unvisited link */
@@ -121,6 +125,10 @@ a:active {
   
   h1 {
     margin-top: 26%;
+    font-size: var(--h2);
+  }
+  .btn {
+    font-size: var(--smallText);
   }
 }
 
