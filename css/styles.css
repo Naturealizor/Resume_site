@@ -46,7 +46,6 @@
 }
 
 html {
-  /* background: url(../views/imgs/grandCanyonPicLarge.jpg) no-repeat center center fixed; */
   background: url(../views/imgs/photo-1640973023201-829349b96ff6.jfif) no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
