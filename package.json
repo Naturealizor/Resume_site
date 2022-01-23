@@ -1,0 +1,20 @@
+{
+  "name": "jacob-jordan-portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio page",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Hello World\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naturealizor/Resume_site.git"
+  },
+  "author": "Jacob Jordan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naturealizor/Resume_site/issues"
+  },
+  "homepage": "https://github.com/Naturealizor/Resume_site#readme"
+}
