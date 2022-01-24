@@ -4,7 +4,7 @@
   --red: #e43c1e5e;
   --orange: hsl(17, 97%, 43%);
   --yellow: #fde24f;
-  --black: #1b2d45;
+  --black: #0b0e13;
   --darkBlue: #00214d;
   --grey: #bfbfbf;
   --lightGrey: #f2f4f6;
@@ -22,7 +22,6 @@
   --headingFont: "Open Sans", sans-serif;
   --bodyFont: "Work Sans", sans-serif;
 
-
   --h1Big: 3.352em;
   --h1: 3.052em;
   --h2: 2.441em;
@@ -34,10 +33,10 @@
   --zeroMarginBottom: 0;
   --h1MarginTopTen: 10em;
 
-  --topNavTextSmall: 1.6em;
+  --topNavTextSmall: 1.2em;
   --footerBtnText: 1.5em;
   --mediumText: 1.1em;
-  --smallText: 0.8em;
+  --smallText: 1em;
   --htmlFont: 112.5%;
   --bigBorderRad: 35px;
   --smallBorderRad: 10px;
@@ -45,56 +44,84 @@
 
 }
 
-html {
+/* html {
   background: url(../views/imgs/photo-1640973023201-829349b96ff6.jfif) no-repeat center center fixed;
   -webkit-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
+  background-size: cover; */
+  /* height: 100%; */
+  /* overflow: hidden; */
+/* } */
+
+body {
+  width: 100vw;
+  height: auto;
+  background-color: var(--black);
 }
 
-p {
-  text-align: center;
-  color: white;
+main {
+  width: 100vw;
 }
 
-main p {
-  font-size: var(--h4);
-}
+/* --------------------------------- Nav ---------------------------------  */
 
-.topNav {
+nav {
   background-color: transparent;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 95vw;
+  margin: 5px;
 }
 
-.topNav a {
+nav a {
   flex-direction: row;
   color: #FDFAFF;
   text-align: center;
   font-size: 30px;
   text-decoration: none;
-  padding: 15px 15px;
-
 }
 
-.mainPgHeader {
+h1 {
   font-family: var(--headingFont);
   font-style: normal;
   font-weight: normal;
   text-align: center;
   color: #e8e4eb;
   text-shadow: var(--subtleTextShadow);
-  margin-top: var(--h1MarginTopTen);
+  margin-top: 15vh;
 }
 
+h2 {
+  font-family: var(--bodyFont);
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: #e8e4eb;
+  text-shadow: var(--subtleTextShadow);
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-family: var(--bodyFont);
+}
 
 .cardContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: auto;
+  padding: 10px;
 }
 
-.siteFooter {
+.cardHeader {
+  margin: 5px;
+}
+
+/* --------------------------------- Footer ---------------------------------  */
+
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -104,16 +131,11 @@ main p {
   text-align: center;
 }
 
-.socialMediaLogos p {
-  margin-bottom: 0;
-}
-
-.footerBtn {
+footer button {
   border-radius: var(--bigBorderRad);
-  background-color: none;
 }
 
-.footerBtn a {
+footer a {
   margin: 5px;
   font-size: var(--footerBtnText);
 }
@@ -121,79 +143,69 @@ main p {
 /* --------------------------------- link state selectors ---------------------------------  */
 
 /* unvisited link */
-a:link {
-  color: var(--purple);
-}
+a:link { color: var(--purple); }
 
 /* visited link */
-a:visited {
-  color: var(--lightPurple);
-}
+a:visited { color: var(--lightPurple); }
 
 /* mouse over link */
-a:hover {
-  color: red;
-}
+a:hover { color: red; }
 
 /* selected link */
-a:active {
-  color: var(--darkBlue);
-}
+a:active { color: var(--darkBlue); }
 
 /* ----------------------------------- Media Queries -----------------------------------  */
 
 /* // for-phone-only */
 @media screen and (max-width: 900px) {
 
-  main {
+  body {
     display: block;
     width: 100%;
+    height:auto;
     margin: auto;
     margin-bottom: var(--zeroMarginBottom);
   }
 
-  body {
-    font-size: 100%;
+  .cardContainer {
+    flex-direction: column;
   }
 
-  .footerBtn {
+  footer button {
     font-size: var(--smallText);
   }
 
-  .topNav a {
+  nav a {
     font-size: var(--topNavTextSmall);
+    width: 85vw;
   }
 
   main p {
     font-size: var(--mediumText);
-
   }
+
+  /* footer {
+    position: sticky;
+  } */
 }
 
 @media (orientation: landscape) {
 
   h1 {
-    margin-top: var(--h1MarginTopTen);
-    margin-bottom: 1em;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
     font-size: var(--h3);
-  }
-
-  .mainPgHeader {
-    margin-top: -18em;
   }
 
   main p {
     font-size: var(--mediumText);
-
   }
-
 }
 
 /* // for-desktop-up */
 @media screen and (min-width: 1100px) {
   h1 {
     font-size: var(--h1);
-    margin-bottom: auto;
   }
 }
 
