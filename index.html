@@ -19,16 +19,22 @@
 			<nav>
 				<a href="views/resume.html">Resume</a>
 				<a href="views/projects.html">Projects</a>
-				<a href="./Pattern_library/view/elements.html">HTML/CSS Docs</a>
+
 			</nav>
 		</header>
 
 		<main>
+			<!-- <p>Date/Time: <span id="datetime"></span></p> -->
 			<h1>Hi, I'm Jacob Jordan</h1>
-			<p>Front end web dev working towards fullstack looking for work.</p>
+			<p>I'm a front end web dev working towards being a fullstack dev. I've got solid skills in HTML, CSS,
+				SASS/SCSS, Github and I'm working on improving up my skills in Javascript daily. I'm also taking the
+				dive into learning Svelte which I'm having quite a bit a fun in it. Throughout my programming career
+				I've also used C#/.NET, C++, Python, Java, MySQL, PHP, WordPress, React, Vue, Gastby and even some
+				custom work
+				in Squarespace.
+			</p>
 		</main>
-
-		<footer>
+		<footer id="footer">
 			<button type="button">
 				<a href="https://github.com/Naturealizor" target="_blank" class="fa fa-github" style="transform: none;
 					text-decoration: none;">Github</a>
@@ -38,10 +44,14 @@
 					style="transform: none;
 					text-decoration: none;">Linkedin</a>
 			</button>
-			<p>Created by Jacob Jordan 2021. Check out the Github repo for the code</p>
+			<h4>Created by Jacob Jordan 2021. Check out the Github repo for the code</h4>
 		</footer>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19389139-1"></script>
 		<script>
+			let dt = new Date();
+			document.getElementById("dateTime").innerHTML = dt.toLocaleTimeString();
+
+
 			window.dataLayer = window.dataLayer || [];
 			function gtag() { dataLayer.push(arguments); }
 			gtag('js', new Date());

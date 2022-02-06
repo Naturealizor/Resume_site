@@ -1,37 +1,40 @@
 :root {
   /* Define Colors as colors */
-  --green: #00ebc7;
+  --green: #00eb0c;
   --red: #e43c1e5e;
   --orange: hsl(17, 97%, 43%);
   --yellow: #fde24f;
-  --black: #0b0e13;
+  --black: #12181B;
+  --lightBlue: #80BFED;
   --darkBlue: #00214d;
-  --grey: #bfbfbf;
+  --grey: #2a2e35;
   --lightGrey: #f2f4f6;
   --businessGrey: #e5ebf1;
   --purple: #3b0579;
   --darkPurple: #441372;
   --lightPurple: #9050cc;
   --complenentarySky: #fad7b6;
+  --white: #ffffff;
 
   /* Define Colors intentions */
-  --background: var(--lightGrey);
-  --textColor: var(--black);
+  --background: var(--black);
+  --textColor: var(--white);
 
   /* Type */
   --headingFont: "Open Sans", sans-serif;
   --bodyFont: "Work Sans", sans-serif;
 
   --h1Big: 3.352em;
-  --h1: 3.052em;
+  --h1: 4em;
   --h2: 2.441em;
   --h3: 1.953em;
   --h4: 1.563em;
   --h5: 1.25em;
+  
   --h1PaddingTop: 10%;
-
-  --zeroMarginBottom: 0;
-  --h1MarginTopTen: 10em;
+  --zero: 0;
+  --h1MarginTop: 8vh;
+  --h2MarginBottom: 3vh;
 
   --topNavTextSmall: 1.2em;
   --footerBtnText: 1.5em;
@@ -44,32 +47,18 @@
 
 }
 
-/* html {
-  background: url(../views/imgs/photo-1640973023201-829349b96ff6.jfif) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  background-size: cover; */
-  /* height: 100%; */
-  /* overflow: hidden; */
-/* } */
-
-body {
-  width: 100vw;
-  height: auto;
-  background-color: var(--black);
-}
-
-main {
-  width: 100vw;
-}
 
 /* --------------------------------- Nav ---------------------------------  */
 
 nav {
-  background-color: transparent;
+  background-color: var(--grey);
   display: flex;
   justify-content: space-around;
-  width: 95vw;
-  margin: 5px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  
 }
 
 nav a {
@@ -78,6 +67,16 @@ nav a {
   text-align: center;
   font-size: 30px;
   text-decoration: none;
+  padding: 1%;
+  text-shadow: var(--subtleTextShadow);
+}
+
+/* --------------------------------- Content ---------------------------------  */
+
+body {
+  width: 100vw;
+  height: auto;
+  background-color: var(--black);
 }
 
 h1 {
@@ -87,7 +86,7 @@ h1 {
   text-align: center;
   color: #e8e4eb;
   text-shadow: var(--subtleTextShadow);
-  margin-top: 15vh;
+  margin-top: var(--h1MarginTop);
 }
 
 h2 {
@@ -97,34 +96,64 @@ h2 {
   text-align: center;
   color: #e8e4eb;
   text-shadow: var(--subtleTextShadow);
+  margin-bottom: var(--h2MarginBottom);
+  margin-top: 8vh;
 }
 
 p {
+  font-weight: normal;
+  line-height: 2;
+  margin: 10%;
   text-align: center;
   color: white;
   font-family: var(--bodyFont);
+  width: auto;
 }
+
+
+/* --------------------------------- Cards ---------------------------------  */
 
 .cardContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  /* flex-wrap: wrap; */
+  width: 75vw;
+  margin: auto;
+  padding: 10px;
+  row-gap: 5px;
+  border-radius: var(--bigBorderRad);
+}
+
+.cardContainer-gh {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
   width: 75vw;
   margin: auto;
   padding: 10px;
+  row-gap: 5px;
+  border-radius: var(--bigBorderRad);
 }
 
 .cardHeader {
-  margin: 5px;
+  margin: 1.75%;
+  background-color: #2a2e35;
+  border: #2a2e35 solid 12px;
+}
+
+.card_desc {
+  font-family: var(--headingFont);
+  margin: 1%;
+  width: max-content;
 }
 
 /* --------------------------------- Footer ---------------------------------  */
 
 footer {
-  position: fixed;
+  position: absolute;
   left: 0;
-  bottom: 0;
   width: 100%;
   background: transparent;
   color: white;
@@ -140,21 +169,26 @@ footer a {
   font-size: var(--footerBtnText);
 }
 
-/* --------------------------------- link state selectors ---------------------------------  */
+#footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* -------------------------- link state selectors ------------------------ */
 
 /* unvisited link */
-a:link { color: var(--purple); }
+a:link { color: var(--complenentarySky); }
 
 /* visited link */
-a:visited { color: var(--lightPurple); }
+a:visited { color: var(--lightBlue); }
 
 /* mouse over link */
-a:hover { color: red; }
+a:hover { color: var(--lightPurple); }
 
 /* selected link */
 a:active { color: var(--darkBlue); }
 
-/* ----------------------------------- Media Queries -----------------------------------  */
+/* -----------------------------Media Queries --------------------------  */
 
 /* // for-phone-only */
 @media screen and (max-width: 900px) {
@@ -164,7 +198,7 @@ a:active { color: var(--darkBlue); }
     width: 100%;
     height:auto;
     margin: auto;
-    margin-bottom: var(--zeroMarginBottom);
+    margin-bottom: var(--zero);
   }
 
   .cardContainer {
@@ -189,18 +223,18 @@ a:active { color: var(--darkBlue); }
   } */
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
 
   h1 {
-    margin-top: 15vh;
-    margin-bottom: 5vh;
+    margin-top: 12vh;
+    margin-bottom: 2vh;
     font-size: var(--h3);
   }
 
   main p {
     font-size: var(--mediumText);
   }
-}
+} */
 
 /* // for-desktop-up */
 @media screen and (min-width: 1100px) {
