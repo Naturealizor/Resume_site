@@ -117,6 +117,18 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  /* flex-wrap: wrap; */
+  width: 75vw;
+  margin: auto;
+  padding: 10px;
+  row-gap: 5px;
+  border-radius: var(--bigBorderRad);
+}
+
+.cardContainer-gh {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
   width: 75vw;
   margin: auto;
