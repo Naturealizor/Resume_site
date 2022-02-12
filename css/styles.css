@@ -74,7 +74,7 @@ nav a {
 /* --------------------------------- Content ---------------------------------  */
 
 body {
-  width: 100vw;
+  width: 100%;
   background-color: var(--black);
   margin: 0;
 }
@@ -89,13 +89,14 @@ h1, h2, p {
 
 h1 {
   font-family: var(--headingFont);
-  margin-top: var(--h1MarginTop);
+  /* margin-top: var(--h1MarginTop); */
+  font-size: 2em;
 }
 
 h2 {
   font-family: var(--bodyFont);
-  margin-bottom: var(--h2MarginBottom);
-  margin-top: 8vh;
+  /* margin-bottom: var(--h2MarginBottom); */
+  /* margin-top: 8vh; */
 }
 
 section {
@@ -107,6 +108,27 @@ section {
   padding: 100px 20vw;
 }
 
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(189% + 1.3px);
+    height: 263px;
+}
+
+.wave .shape-fill {
+    fill: #9013FE;
+}
+
 p {
   line-height: 2;
   width: auto;
@@ -115,16 +137,16 @@ p {
 }
 
 .spacer {
-  aspect-ratio: 900/300;
+  aspect-ratio: 960/540;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.layer-1 {
-
-}
+/* .layer-1 {
+  background-image: url(./../views/imgs/wave-haikei\ \(2\).svg);
+} */
 
 /* --------------------------------- Cards ---------------------------------  */
 
