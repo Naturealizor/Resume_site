@@ -12,7 +12,7 @@
   --lightGrey: #f2f4f6;
   --businessGrey: #e5ebf1;
   --purple: #410b62;
-  --darkPurple: #441372;
+  --darkPurple: #321953;
   --lightPurple: #9050cc;
   --complenentarySky: #fad7b6;
   --white: #ffffff;
@@ -137,13 +137,16 @@ p {
 }
 
 .spacer {
-  aspect-ratio: 960/540;
+  aspect-ratio: 1250/440;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.purple {
+  background-color: var(--darkPurple);
+}
 /* .layer-1 {
   background-image: url(./../views/imgs/wave-haikei\ \(2\).svg);
 } */
@@ -158,7 +161,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  width: 75vw;
+  width: -webkit-fill-available;
   margin: auto;
   padding: 10px;
   row-gap: 5px;
@@ -190,10 +193,12 @@ footer {
   background: transparent;
   color: white;
   text-align: center;
+  margin-top: 1rem;
 }
 
 footer button {
   border-radius: var(--bigBorderRad);
+  background-color: #240240;
 }
 
 footer a {
