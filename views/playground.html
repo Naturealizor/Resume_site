@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link -->
+    <title>Playground - Code testing</title>
+</head>
+<body>
+    <h1>This area is going to be used as a sort of sandbox area for some little project or ideas I have. As of writing this I don't really plan on styling much on this page, more so focusing on functionality of the code.</h1>
+
+<!-- Creating the trip recorder/list
+     What I want to to do is as follows
+    1. have some text fields with input box
+        1.a Dates
+        1.b Starting poing
+        1.c Destination
+        1.d Starting miles
+        1.e Ending miles
+        1.f Gas with initials of who paid
+        1.g Other expenses
+    
+    Each of these items should add the user input to a table of some kind-->
+    
+<li>
+    <label for="date">Date: </label>
+        <input type="datetime-local" id="date" name="date">
+        <button type="button" name="dateBtn" value="Add Date">Add Date</button>
+    </li>
+    
+    <br>
+    
+<li>
+    <label for="startingPoint">Starting Point: </label>
+        <input type="text" id="startingPoint" name="startingPoint">
+        <button type="button" name="startPointBtn" value="Add Starting Location">Add Starting Location</button>
+</li>
+
+<br>
+
+<li>
+    <label for="destination">Destination: </label>
+        <input type="text" id="destination" name="destination">
+        <button type="button" value="Add Destination">Add Destination</button>
+</li>
+
+<br>
+
+<li>
+    <label for="startingMiles">Starting Miles: </label>
+        <input type="number" id="startingMiles" name="startingMiles">
+        <button type="button" value="Add Starting Miles">Add Starting Miles</button>
+</li>
+
+<br>
+
+<li>
+    <label for="endingMiles">Ending Miles: </label>
+        <input type="number" id="endingMiles" name="endingMiles">
+        <button type="button" value="Add Ending Miles">Add Ending Miles</button>
+</li>
+
+<br>
+
+<li>
+    <label for="gas">Gas Amount: </label>
+        <input type="number" id="gas" name="gas">
+        <button type="button" value="Add Gas Expense">Add Gas Expense</button>
+</li>
+
+<br>
+
+<li>
+    <label for="whoPaid">Who Paid: </label>
+        <input type="text" id="whoPaid" name="whoPaid">
+        <button type="button" value="Add Initials">Add Initials</button>
+</li>
+
+<br>
+
+<li>
+    <label for="otherExpenses">Other Expenses: </label>
+        <input type="number" id="otherExpenses" name="otherExpenses">    
+        <button type="button" value="Add Amounts">Add Amounts</button>
+</li>
+
+
+    <script src="playGround.js"></script>
+</body>
+</html>
