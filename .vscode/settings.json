@@ -51,5 +51,7 @@
       "args": [],
       "icon": "terminal"
     }
-  }
+  },
+  "editor.codeActionsOnSave": {},
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
